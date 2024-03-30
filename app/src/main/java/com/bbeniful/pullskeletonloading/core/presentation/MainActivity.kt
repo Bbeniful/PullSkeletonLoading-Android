@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.bbeniful.pullskeletonloading.core.presentation.ui.theme.PullSkeletonLoadingTheme
-import com.bbeniful.pullskeletonloading.pullToRefresh.presentation.PullToRefreshView
+import com.bbeniful.pullskeletonloading.pullToRefresh.presentation.pullToRefreshOne.PullToRefreshView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

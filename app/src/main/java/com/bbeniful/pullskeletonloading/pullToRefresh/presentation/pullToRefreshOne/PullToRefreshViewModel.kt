@@ -1,7 +1,8 @@
-package com.bbeniful.pullskeletonloading.pullToRefresh.presentation
+package com.bbeniful.pullskeletonloading.pullToRefresh.presentation.pullToRefreshOne
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.bbeniful.pullskeletonloading.pullToRefresh.presentation.PullToRefreshUIState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
