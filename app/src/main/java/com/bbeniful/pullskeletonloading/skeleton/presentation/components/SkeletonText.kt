@@ -11,17 +11,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.bbeniful.pullskeletonloading.skeleton.domain.extensions.shimmerLoadingAnimation
 
 @Composable
-fun SkeletonText(modifier: Modifier = Modifier,text: String, fontSize: TextUnit, color: Color) {
+fun SkeletonText(modifier: Modifier = Modifier,text: String, fontSize: TextUnit, color: Color,
+                 shape: Shape = RoundedCornerShape(5.dp)) {
     Box (modifier = Modifier.height(90.dp)
         .fillMaxWidth()
-        .background(Color.LightGray)
+        .background(Color.LightGray, shape = shape)
         .blur(5.dp)
-        .shimmerLoadingAnimation(shape = RoundedCornerShape(23.dp))){
+        .shimmerLoadingAnimation(shape = shape)){
         Text(
             text = text,
             modifier = modifier,
